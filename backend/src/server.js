@@ -1,4 +1,4 @@
-```javascript
+
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
@@ -32,4 +32,4 @@ mongoose
   .catch((error) => {
     console.error("Erro ao conectar ao MongoDB:", error);
   });
-```
+
