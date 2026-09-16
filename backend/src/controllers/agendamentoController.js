@@ -191,4 +191,4 @@ module.exports = {
   atualizarAgendamento,
   cancelarAgendamento,
   excluirAgendamento,
-};git status
+};
