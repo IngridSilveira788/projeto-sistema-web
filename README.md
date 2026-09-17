@@ -16,3 +16,26 @@ Aplicação Web Full Stack desenvolvida com a Stack MERN, utilizando React, Node
 -Depois acesse: http://localhost:5174/login e faça login com o usuário cadastrado.
 
 *Obs.: a porta do frontend pode ser diferente; nesse caso, use o endereço mostrado pelo npm run dev.
+
+#Como acessar os Serviços
+Backend: entre na pasta backend e execute:
+npm start
+
+Frontend: em outro terminal, entre na pasta frontend e execute:
+npm run dev
+
+Abra o endereço que o Vite mostrar, por exemplo:
+http://localhost:5174/
+Faça login no sistema.
+
+Depois acesse:
+http://localhost:5174/servicos
+O que tem na tela de Serviços?
+
+Podemos cadastrar e visualizar serviços, informando:
+
+Nome,
+Descrição e 
+Preço
+
+Os dados são enviados pelo React → Axios → API → MongoDB.
