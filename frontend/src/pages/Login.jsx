@@ -1,7 +1,9 @@
 import { useState } from "react";
 import api from "../services/api";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
 
@@ -17,7 +19,7 @@ function Login() {
       console.log(resposta.data);
 
       alert("Login realizado com sucesso!");
-
+      navigate("/agendamento");
       // Guardar o token para utilizar nas próximas requisições
       localStorage.setItem("token", resposta.data.token);
     } catch (error) {
