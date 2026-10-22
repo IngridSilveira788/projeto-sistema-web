@@ -1,0 +1,150 @@
+
+.cadastro-page {
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #faf7f2;
+  font-family: Arial, sans-serif;
+  color: #244238;
+}
+
+.cadastro-card {
+  width: 100%;
+  max-width: 460px;
+  box-sizing: border-box;
+  padding: 38px 34px;
+  background: #ffffff;
+  border: 1px solid #eee5df;
+  border-radius: 16px;
+  box-shadow: 0 10px 35px rgba(36, 66, 56, 0.09);
+}
+
+.cadastro-voltar {
+  display: inline-block;
+  margin-bottom: 26px;
+  padding: 9px 14px;
+  background: transparent;
+  color: #244238;
+  border: 1px solid #244238;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.cadastro-voltar:hover {
+  background: #e8efe9;
+}
+
+.cadastro-marca {
+  margin: 0 0 10px;
+  color: #17483e;
+  font-family: Georgia, serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cadastro-card h1 {
+  margin: 0;
+  color: #d99ba6;
+  font-family: Georgia, serif;
+  font-size: 40px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.cadastro-descricao {
+  margin: 12px 0 28px;
+  color: #65746c;
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.cadastro-campo {
+  margin-bottom: 20px;
+}
+
+.cadastro-campo label {
+  display: block;
+  margin-bottom: 8px;
+  color: #244238;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.cadastro-campo input {
+  display: block;
+  width: 100%;
+  min-height: 48px;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  background: #faf7f2;
+  color: #244238;
+  border: 1px solid #d9d4cc;
+  border-radius: 7px;
+  font-size: 15px;
+  outline: none;
+}
+
+.cadastro-campo input::placeholder {
+  color: #858585;
+}
+
+.cadastro-campo input:focus {
+  border-color: #d99ba6;
+  box-shadow: 0 0 0 3px rgba(217, 155, 166, 0.2);
+}
+
+.cadastro-botao {
+  width: 100%;
+  min-height: 49px;
+  margin-top: 6px;
+  padding: 13px;
+  background: #17483e;
+  color: #ffffff;
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.cadastro-botao:hover {
+  background: #10382f;
+}
+
+.cadastro-login {
+  margin: 24px 0 0;
+  color: #65746c;
+  font-size: 14px;
+  text-align: center;
+}
+
+.cadastro-login a {
+  color: #b87583;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.cadastro-login a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .cadastro-page {
+    padding: 20px 12px;
+  }
+
+  .cadastro-card {
+    padding: 30px 22px;
+  }
+
+  .cadastro-card h1 {
+    font-size: 34px;
+  }
+}

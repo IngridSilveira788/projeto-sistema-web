@@ -1,41 +1,89 @@
-# projeto-sistema-web
-Aplicação Web Full Stack desenvolvida com a Stack MERN, utilizando React, Node.js, Express e MongoDB.
+# Lumière Beauty
 
-#Para testar o sistema:
+Sistema web de agendamento de serviços de beleza, desenvolvido como projeto acadêmico. A plataforma busca facilitar a visualização dos serviços oferecidos e o agendamento de atendimentos, com uma interface elegante e intuitiva.
 
--Abra o projeto projeto-sistema-web.
+## Sobre o projeto
 
--Em um terminal, entre em backend e execute node .\src\server.js. Espere aparecer "MongoDB conectado com sucesso!" e "Servidor rodando em http://localhost:3000".
+O **Lumière Beauty** é uma aplicação web voltada para salões de beleza, permitindo que os usuários conheçam os serviços disponíveis e realizem agendamentos. O projeto utiliza uma arquitetura separada entre frontend e backend, com persistência de dados em banco de dados MongoDB.
 
--Em outro terminal, entre em frontend e execute npm run dev.
+## Interface do sistema
 
--Acesse a tela de cadastro: http://localhost:5174/cadastro
+### Tela inicial
 
--Faça um cadastro.
+![Tela inicial do Lumière Beauty](docs/prints/tela-inicial.png)
 
--Depois acesse: http://localhost:5174/login e faça login com o usuário cadastrado.
+> Adicione uma captura de tela real da interface no caminho `docs/prints/tela-inicial.png`.
 
-*Obs.: a porta do frontend pode ser diferente; nesse caso, use o endereço mostrado pelo npm run dev.
+## Tecnologias utilizadas
 
-#Como acessar os Serviços
-Backend: entre na pasta backend e execute:
-npm start
+| Tecnologia | Utilização |
+|---|---|
+| React | Construção da interface do usuário |
+| JavaScript | Lógica da aplicação |
+| CSS | Estilização das páginas |
+| Node.js | Ambiente de execução do backend |
+| Express | Criação da API |
+| MongoDB | Armazenamento dos dados |
 
-Frontend: em outro terminal, entre na pasta frontend e execute:
+
+## Como executar o projeto
+
+### Pré-requisitos
+
+- Node.js e npm instalados.
+- Acesso a um banco MongoDB configurado.
+- Git instalado para clonar o repositório.
+
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/IngridSilveira788/projeto-sistema-web.git
+cd projeto-sistema-web
+```
+
+### 2. Configure e execute o backend
+
+Abra um terminal na pasta do backend:
+
+```bash
+cd backend
+npm install
+```
+
+Configure as variáveis de ambiente necessárias no arquivo `.env`, seguindo a estrutura utilizada pelo projeto. Não compartilhe nem envie esse arquivo ao repositório.
+
+Inicie o servidor:
+
+```bash
+node src/server.js
+```
+
+### 3. Execute o frontend
+
+Abra outro terminal, na raiz do projeto:
+
+```bash
+cd frontend
+npm install
 npm run dev
+```
 
-Abra o endereço que o Vite mostrar, por exemplo:
-http://localhost:5174/
-Faça login no sistema.
+Acesse no navegador o endereço informado pelo Vite no terminal.
 
-Depois acesse:
-http://localhost:5174/servicos
-O que tem na tela de Serviços?
+## 🌐 Endereços de acesso
 
-Podemos cadastrar e visualizar serviços, informando:
+| Serviço | Endereço |
+|---|---|
+| Frontend | `http://localhost:5173` |
+| API | `http://localhost:3000/api` |
 
-Nome,
-Descrição e 
-Preço
 
-Os dados são enviados pelo React → Axios → API → MongoDB.
+## Funcionalidades do sistema
+
+- Visualização dos serviços de beleza.
+- Cadastro e autenticação de usuários.
+- Agendamento de serviços.
+- Integração entre frontend e backend.
+- Persistência das informações no MongoDB.
+
+
