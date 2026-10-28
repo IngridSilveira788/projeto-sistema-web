@@ -5,9 +5,15 @@
   --green: #17483e;
   --text: #244238;
   --muted: #756f68;
+
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
   color: var(--text);
   background: white;
   font-family: Georgia, "Times New Roman", serif;
+  overflow-x: clip;
 }
 
 .home * {
@@ -281,28 +287,44 @@
 
 @media (max-width: 700px) {
   .navbar {
+    padding: 18px 5%;
     align-items: flex-start;
     flex-direction: column;
   }
 
   .navbar nav {
+    width: 100%;
     gap: 15px;
   }
 
   .hero {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 30px;
-    padding-top: 40px;
+    padding: 40px 5%;
+  }
+
+  .hero-text,
+  .booking-text {
+    max-width: 100%;
   }
 
   .hero-image {
+    width: 100%;
     height: 280px;
+    border-radius: 70px 70px 0 0;
+  }
+
+  .services-section,
+  .steps-section,
+  .booking-section {
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   .service-cards,
   .steps,
   .booking-section {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .steps {
@@ -313,11 +335,16 @@
     gap: 25px;
   }
 
+  .form-row {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
   .service-card img {
     height: 210px;
   }
 
   .footer {
+    padding: 28px 5%;
     flex-direction: column;
     align-items: flex-start;
   }
