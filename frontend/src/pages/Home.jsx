@@ -1,5 +1,6 @@
 
 import "./Home.css";
+import imagemHome from "./imagem-home.png";
 
 function Home() {
   return (
@@ -31,8 +32,8 @@ function Home() {
 
           <img
             className="hero-image"
-            src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=1000&q=85"
-            alt="Interior elegante de um salão de beleza"
+            src="/src/pages/imagem-home.png"
+            alt="Interior elegante do Lumière Beauty"
           />
         </section>
 
