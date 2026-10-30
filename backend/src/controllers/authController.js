@@ -83,6 +83,7 @@ async function login(req, res) {
       mensagem: "Login realizado com sucesso",
       token,
     });
+    
   } catch (erro) {
     return res.status(500).json({
       mensagem: "Erro ao realizar login",
