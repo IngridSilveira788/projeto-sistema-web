@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import api from "../services/api";
 import "./Login.css";
 
-function Login() {
+function Login({ onLogin }) {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
@@ -19,10 +19,9 @@ function Login() {
       });
 
       // Guardar o token antes de navegar para outra página
-      localStorage.setItem("token", resposta.data.token);
+     onLogin(resposta.data.token);
 
-      alert("Login realizado com sucesso!");
-      navigate("/agendamento");
+     alert("Login realizado com sucesso!");
     } catch (error) {
       console.error("Erro ao realizar login:", error);
       alert(
